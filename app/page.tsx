@@ -156,7 +156,7 @@ export default function Home() {
         </Card>
 
         {(britishText || translatedText) && (
-          <Tabs defaultValue={isJapanese ? "translation" : "british"} className="mb-8">
+          <Tabs defaultValue={isJapanese ? "translation" : "syntax"} className="mb-8">
             <TabsList className="grid grid-cols-5 bg-gray-50 rounded-xl p-1">
               {isJapanese && (
                 <TabsTrigger
@@ -166,6 +166,12 @@ export default function Home() {
                   英語訳
                 </TabsTrigger>
               )}
+              <TabsTrigger
+                value="syntax"
+                className="rounded-lg data-[state=active]:bg-white data-[state=active]:shadow-sm"
+              >
+                構文解析
+              </TabsTrigger>
               <TabsTrigger
                 value="british"
                 className="rounded-lg data-[state=active]:bg-white data-[state=active]:shadow-sm"
@@ -177,12 +183,6 @@ export default function Home() {
                 className="rounded-lg data-[state=active]:bg-white data-[state=active]:shadow-sm"
               >
                 シャーロック調
-              </TabsTrigger>
-              <TabsTrigger
-                value="syntax"
-                className="rounded-lg data-[state=active]:bg-white data-[state=active]:shadow-sm"
-              >
-                構文解析
               </TabsTrigger>
               <TabsTrigger
                 value="similar"

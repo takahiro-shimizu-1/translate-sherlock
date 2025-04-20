@@ -123,7 +123,7 @@ export default function Home() {
           </div>
           <h1 className="text-4xl md:text-5xl font-bold mb-4 tracking-tight">シャーロックホームズ調変換</h1>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            あなたのテキストをエレガントなイギリス英語とシャーロックホームズの雰囲気に変換します
+            エレガントなイギリス英語とシャーロックホームズの雰囲気に変換します
           </p>
         </header>
 
